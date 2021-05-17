@@ -1,0 +1,79 @@
+.nav-item {
+  padding: 0 3vw;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.navbar-link {
+  // display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  letter-spacing: .2rem;
+  transition: color 1s ;
+  & span {
+    transition: letter-spacing 0.5s;
+    font-size: 1.6rem;
+  }
+  &:hover {
+    color: $accent-color;
+  }
+  &:hover > span {
+    letter-spacing: .4rem;
+  }
+}
+
+.nav-padding {
+  padding: 5rem 3rem 0;
+}
+
+.navbar-toggler {
+  padding: .5rem 1rem;
+  font-size: 1.4rem;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(122,160,178, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+// ********** responsive ********** //
+
+@media (max-width: 991px) {
+
+  .nav-fill .nav-item, .nav-fill>.nav-link {
+    flex: 1 1 auto;
+    text-align: initial;
+    padding-top: 2.4rem;
+  }
+
+  .navbar-light .navbar-toggler {
+    color: $accent-color2;
+    border-color: $accent-color2;
+  }
+
+  .container.nav-padding {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+
+  .nav-padding {
+    padding: 5rem 8rem 0;
+  }
+
+}
+
+@media (max-width: 575px) {
+
+  .nav-padding {
+    padding: 5rem 4rem 0;
+  }
+
+  .navbar-link {
+    font-size: 2.2rem;
+    & span {
+      font-size: 1.4rem;
+    }
+  }
+
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Poppins:wght@600&family=Vidaloka&display=swap');
+
+$primary-color: #f3eee8;
+$accent-color: #d63359;
+$accent-color2: #7AA0B2;
+$soft-color: #f9dddd;
+$soft-color2: #E3DACD;
+
+$alpha: .6;
+
+$black: #272727;
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body,
+form,
+a {
+  overflow-x: hidden;
+  background-color: $primary-color;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  letter-spacing: 0rem;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  transition: .3s;
+  &:hover {
+    color: $accent-color;
+  }
+  
+}

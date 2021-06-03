@@ -61,19 +61,26 @@
     padding: 5rem 8rem 0;
   }
 
+  .navbar-link {
+    font-size: 2.2rem;
+    & span {
+      font-size: 1.4rem;
+    }
+    & p {
+      margin: 1rem 0 0;
+    }
+  }
+
+  .nav-item {
+    text-align: left;
+  }
+
 }
 
 @media (max-width: 575px) {
 
   .nav-padding {
     padding: 5rem 4rem 0;
-  }
-
-  .navbar-link {
-    font-size: 2.2rem;
-    & span {
-      font-size: 1.4rem;
-    }
   }
 
 }

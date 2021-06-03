@@ -1,0 +1,76 @@
+{
+  "gallery": [
+    {
+      "id": "1",
+      "img": "img/beignes.jpg"
+    },
+    {
+      "id": "2",
+      "img": "img/cheesecake.jpg"
+    },
+    {
+      "id": "3",
+      "img": "img/poptarts.jpg"
+    },
+    {
+      "id": "4",
+      "img": "img/ricecrispies.jpg"
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "5",
+      "img": "img/pancakes.jpg"
+    },
+    {
+      "id": "6",
+      "img": "img/tiramisu.jpg"
+    },
+    {
+      "id": "7",
+      "img": "img/cupcakes.jpg"
+    },
+    {
+      "id": "8",
+      "img": "img/cranberry-pie.jpg"
+    },
+    {
+      "id": "9",
+      "img": "img/pistachios-cake.jpg"
+    },
+    {
+      "id": "10",
+      "img": "img/buns.jpg"
+    },
+    {
+      "id": "11",
+      "img": "img/cookies.jpg"
+    },
+    {
+      "id": "12",
+      "img": "img/blueberry-pie.jpg"
+    },
+    {
+      "id": "13",
+      "img": "img/chocolate-dessert.jpg"
+    },
+    {
+      "id": "14",
+      "img": "img/brownies.jpg"
+    },
+    {
+      "id": "15",
+      "img": "img/chocolate.jpg"
+    },
+    {
+      "id": "16",
+      "img": "img/spiral-cake.jpg"
+    }
+  ],
+  "form": [
+    {
+      "id": "contactForm",
+      "action": "https://formspree.io/f/myylwznl"
+    }
+  ]
+}

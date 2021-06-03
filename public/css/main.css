@@ -5,10 +5,17 @@ html {
 }
 
 body,
-form,
-a {
+form {
   overflow-x: hidden;
   background-color: #f3eee8;
+}
+
+body,
+form,
+a,
+label,
+#email,
+#message {
   font-family: 'Oxygen', sans-serif;
   font-size: 1.6rem;
   line-height: 2.8rem;
@@ -24,6 +31,146 @@ a {
 
 a:hover {
   color: #d63359;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+h1, h3 {
+  margin: 6rem 0 3rem;
+}
+
+h2 {
+  margin-top: 6rem;
+}
+
+.carousel {
+  width: 90%;
+  margin-top: 5rem;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: 65vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: #d63359;
+}
+
+#loading-icon {
+  width: 5%;
+  margin-top: 6rem;
+}
+
+.grid {
+  width: 90%;
+  margin: 5rem auto;
+}
+
+.grid-item {
+  width: 20vw;
+  padding: 1.2rem;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.grid-item.large {
+  z-index: 2;
+}
+
+#contactForm {
+  padding: 0 1rem;
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  #contactForm {
+    width: 100%;
+  }
+}
+
+label,
+#message,
+#email {
+  padding: 1rem 0;
+}
+
+#message,
+#email,
+.form-grouop {
+  padding-left: 1rem;
+}
+
+#sendBtn {
+  margin: 3.6rem 0;
+  padding: .8rem 2rem;
+  background-color: #E3DACD;
+  font-weight: 800;
+  letter-spacing: .2rem;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+#sendBtn:hover {
+  background-color: rgba(122, 160, 178, 0.5);
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+h1, h2, h3 {
+  opacity: 0;
+  -webkit-animation: fadeInUp 1s ease-in-out 0s forwards;
+          animation: fadeInUp 1s ease-in-out 0s forwards;
+}
+
+h1 h1, h1 h2, h1 h3, h2 h1, h2 h2, h2 h3, h3 h1, h3 h2, h3 h3 {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 
 .nav-item {
@@ -88,16 +235,22 @@ a:hover {
   .nav-padding {
     padding: 5rem 8rem 0;
   }
-}
-
-@media (max-width: 575px) {
-  .nav-padding {
-    padding: 5rem 4rem 0;
-  }
   .navbar-link {
     font-size: 2.2rem;
   }
   .navbar-link span {
     font-size: 1.4rem;
+  }
+  .navbar-link p {
+    margin: 1rem 0 0;
+  }
+  .nav-item {
+    text-align: left;
+  }
+}
+
+@media (max-width: 575px) {
+  .nav-padding {
+    padding: 5rem 4rem 0;
   }
 }
